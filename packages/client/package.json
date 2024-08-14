@@ -40,6 +40,7 @@
     "lint": "aegir lint",
     "dep-check": "aegir dep-check",
     "build": "aegir build",
+    "build:esbuild": "nodemon --config esbuild.watch.json esbuild.mjs",
     "test": "aegir test",
     "test:node": "aegir test -t node --cov"
   },
@@ -63,6 +64,12 @@
     "@libp2p/peer-id-factory": "^4.2.3",
     "aegir": "^44.1.1",
     "body-parser": "^1.20.2",
+    "esbuild": "^0.20.2",
+    "esbuild-css-modules-plugin": "^3.1.2",
+    "esbuild-plugin-copy": "^2.1.1",
+    "esbuild-plugin-glsl": "^1.2.2",
+    "esbuild-plugin-path-alias": "^1.0.7",
+    "esbuild-plugin-polyfill-node": "^0.3.0",
     "it-all": "^3.0.6"
   },
   "sideEffects": false

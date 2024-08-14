@@ -13,7 +13,8 @@ if (process.env.ECHO_SERVER == null) {
   throw new Error('Echo server not configured correctly')
 }
 
-const serverUrl = process.env.ECHO_SERVER
+// const serverUrl = process.env.ECHO_SERVER
+const serverUrl =  'http://localhost:5869'
 
 describe('delegated-routing-v1-http-api-client', () => {
   let client: DelegatedRoutingV1HttpApiClient

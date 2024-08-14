@@ -1,0 +1,16 @@
+{
+  "ignore": [
+    ".git",
+    ".idea",
+    ".jsonenv",
+    "logs",
+    "node_modules",
+    "jspm_packages",
+    ".npm",
+    "typings"
+  ],
+  "watch": [
+    "src"
+  ],
+  "ext": "js mjs html css json tsx ts glsl"
+}

@@ -115,6 +115,7 @@ describe('delegated-routing-v1-http-api-server', () => {
 
     const json = await res.json()
 
+    console.log('-----------------------------------', json)
     expect(json).to.have.nested.property('Providers[0].Schema', 'peer')
     expect(json).to.have.nested.property('Providers[0].ID', provider1.id.toString())
     expect(json).to.have.deep.nested.property('Providers[0].Addrs', provider1.multiaddrs.map(ma => ma.toString()))
